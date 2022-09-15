@@ -12,16 +12,23 @@
     <script src="https://kit.fontawesome.com/9ed23996a7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <header>
-      <a href="index.html"> <img class="banner-img" src="images/logo.png" alt="The logo of Health & Fitness" /> </a>
-      <input type="checkbox" id="menu-checkbox" />
-      <label for="menu-checkbox" id="menu-icon"><i class="fa-solid fa-bars"></i></label>
+      <div class="top-banner">
+        <a href="index.html"> <img class="logo" src="images/logo.png" alt="The logo of Health & Fitness" /> </a>
+      </div>
       <nav>
-        <a class="current" href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
+        <div>
+          <a class="current" href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <input type="checkbox" id="menu-checkbox" />
+          <label for="menu-checkbox" id="menu-icon"><i class="fa-solid fa-bars"></i></label>
+        </div>
       </nav>
     </header>
     <main>
@@ -32,11 +39,12 @@
         <button>next slide &gt;</button>
       </div>
     </main>
+
     <footer>
       <div class="footer-socials">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""> <i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
       </div>
       <p>&copy; 2022 health & fitness</p>
     </footer>
