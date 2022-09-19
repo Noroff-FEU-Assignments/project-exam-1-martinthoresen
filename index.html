@@ -19,24 +19,25 @@
         <a href="index.html"> <img class="logo" src="images/logo.png" alt="The logo of Health & Fitness" /> </a>
       </div>
       <nav>
-        <div>
+        <div class="navbar">
           <a class="current" href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="blog.html">Blog</a>
           <a href="contact.html">Contact</a>
         </div>
-        <div>
-          <input type="checkbox" id="menu-checkbox" />
-          <label for="menu-checkbox" id="menu-icon"><i class="fa-solid fa-bars"></i></label>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
     </header>
     <main>
       <h1>Latest Posts</h1>
-      <div class="latest-blogs-container"></div>
+      <div class="latest-blogs-container">
+        <div class="loader"></div>
+      </div>
       <div class="blog-navigator">
-        <button>&lt; previous slide</button>
-        <button>next slide &gt;</button>
+        <button class="next-slide">&lt; previous slide</button>
+        <button class="prev-slide">next slide &gt;</button>
       </div>
     </main>
 
@@ -48,5 +49,7 @@
       </div>
       <p>&copy; 2022 health & fitness</p>
     </footer>
+    <script src="js/index.js"></script>
+    <script src="js/components/createMessage.js"></script>
   </body>
 </html>
