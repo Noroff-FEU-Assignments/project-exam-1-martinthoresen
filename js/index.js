@@ -15,7 +15,7 @@ async function getBlogs() {
 
     for (let i = 0; i < blogs.length; i++) {
       function createHtml(blogs) {
-        blogContainer.innerHTML += `<div class="blog">
+        blogContainer.innerHTML += `<div class="latest-blogs">
                                         <a href="blog-post.html?id=${blogs[i].id}"
                                         <h2>${blogs[i].title.rendered}</h2>
                                         <img src="${blogs[i].attatchment}">

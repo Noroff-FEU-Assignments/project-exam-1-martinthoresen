@@ -129,7 +129,7 @@ nav a {
 .latest-blogs-container div {
   max-width: 25em;
 }
-.blog {
+.latest-blogs {
   background-color: #ebebeb;
 }
 .blog-navigator {
@@ -165,6 +165,24 @@ nav a {
   max-width: 17em;
   font-size: 1.2em;
 }
+
+/* BLOG */
+
+.blogs-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.blogs-container {
+  max-width: 25em;
+}
+.blog {
+  flex: 2;
+}
+.blog img {
+  max-width: 10em;
+}
+/* CONTACT */
+
 @media (min-width: 600px) {
   nav {
     background-color: #141414;
