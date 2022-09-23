@@ -20,7 +20,7 @@ async function getBlogs() {
                                         <img src="${blogs[i].better_featured_image.source_url}">
                                         <h2>${blogs[i].title.rendered}</h2>
                                         <p>${blogs[i].excerpt.rendered}</p>
-                                        <a href="blog-post.html?id=${blogs[i].id}">Read</a>
+                                        <a href="blog-post.html?slug=${blogs[i].slug}">Read</a>
                                         </div>`;
       }
 
