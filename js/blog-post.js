@@ -7,7 +7,9 @@ hamburger.addEventListener("click", () => {
 
 const blogPostContainer = document.querySelector(".blog-post-container");
 const queryString = document.location.search;
+console.log(queryString);
 const params = new URLSearchParams(queryString);
+console.log(params);
 const id = params.get("id");
 const url = "https://healthandfitness.flowerpower12394.one/wp-json/wp/v2/posts/" + id;
 

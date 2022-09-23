@@ -16,12 +16,11 @@ async function getBlogs() {
     for (let i = 0; i < blogs.length; i++) {
       function createHtml(blogs) {
         blogContainer.innerHTML += `<div class="blog">
-                                        <a href="blog-post.html?id=${blogs[i].id}"
-                                        <h2>${blogs[i].title.rendered}</h2>
+                                        <p>09.09.2022, Robert Thompson</p>
                                         <img src="${blogs[i].better_featured_image.source_url}">
+                                        <h2>${blogs[i].title.rendered}</h2>
                                         <p>${blogs[i].excerpt.rendered}</p>
-                                        <p>${blogs[i].author}</p>
-                                        </a>
+                                        <a href="blog-post.html?id=${blogs[i].id}">Read</a>
                                         </div>`;
       }
 

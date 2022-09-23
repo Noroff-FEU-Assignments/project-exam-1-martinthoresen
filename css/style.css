@@ -171,15 +171,18 @@ nav a {
 .blogs-container {
   display: flex;
   flex-wrap: wrap;
-}
-.blogs-container {
-  max-width: 25em;
+  justify-content: center;
+  margin: 0 auto;
 }
 .blog {
-  flex: 2;
+  margin: 1em 5em;
 }
 .blog img {
-  max-width: 10em;
+  max-width: 20em;
+  max-height: 10em;
+}
+.blog p {
+  max-width: 15em;
 }
 /* CONTACT */
 
@@ -212,5 +215,10 @@ nav a {
   .about-container p {
     font-size: 1.5em;
     margin: 0 2em;
+  }
+  .blog img {
+    width: 25em;
+    max-height: 15em;
+    object-fit: cover;
   }
 }
