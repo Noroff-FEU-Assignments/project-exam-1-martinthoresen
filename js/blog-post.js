@@ -27,9 +27,15 @@ getBlogPost();
 function createHtml(blogPost) {
   blogPostContainer.innerHTML = `<div class="blog-post">
                                 <img src="${blogPost[0].better_featured_image.source_url}">
-                                <h2>${blogPost[0].title.rendered}</h2>
-                                <p class="blog-excerpt">${blogPost[0].excerpt.rendered}</p>
-                                <p>${blogPost[0].content.rendered}</p>
+                                <div class="social-buttons">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                                
+                                <h1 class="blog-title">${blogPost[0].title.rendered}</h1>
+                                <div class="blog-excerpt">${blogPost[0].excerpt.rendered}</div>
+                                <div class="blog-content">${blogPost[0].content.rendered}</div>
                                 </div>
                                 `;
   document.title = blogPost[0].title.rendered + " - Health & Fitness";

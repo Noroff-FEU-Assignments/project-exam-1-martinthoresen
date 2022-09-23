@@ -56,9 +56,13 @@ h1 {
   margin: 3em 2.5em;
   padding: 0.2em;
 }
+
 h2 {
-  font-family: "Jost", sans-serif;
+  font-family: "Jost" sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
 }
+
 /* NAVIGATION */
 
 nav {
@@ -171,20 +175,59 @@ nav a {
 .blogs-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .blog {
-  margin: 1em 5em;
+  margin: 1em 3em;
+  max-width: 25em;
 }
 .blog img {
-  max-width: 20em;
   max-height: 10em;
 }
-.blog p {
-  max-width: 15em;
+
+h2 {
+  font-family: "Jost" sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* BLOG PAGE */
+.blog-post-flex {
+  display: flex;
+  justify-content: space-around;
+  margin: 5em;
+  flex-wrap: wrap;
+}
+.blog-title {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-style: normal;
+  margin: 0;
+}
+.blog-post-container {
+  width: 60%;
+}
+.blog-post {
+  display: flex;
+  flex-direction: column;
+}
+.social-buttons {
+  font-size: 1.5em;
+  align-self: flex-end;
+  color: #36514b;
+}
+.blog-excerpt {
+  font-size: 1.5em;
+}
+.blog-post-container img {
+  object-fit: cover;
+  height: 20em;
+  width: 100%;
 }
 /* CONTACT */
+
+/* MEDIA QUERIES */
 
 @media (min-width: 600px) {
   nav {
