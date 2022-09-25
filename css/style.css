@@ -216,9 +216,12 @@ h2 {
   font-size: 1.5em;
   align-self: flex-end;
   color: #36514b;
+  margin: 0.5em 0;
 }
 .blog-excerpt {
   font-size: 1.5em;
+}
+.blog-content {
 }
 .blog-post-container img {
   object-fit: cover;
