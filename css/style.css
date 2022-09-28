@@ -70,6 +70,11 @@ h2 {
   animation: spin 1.5s linear infinite;
   margin: 4em 0;
 }
+.link-style {
+  color: #a62e2e;
+  font-family: "Jost", sans-serif;
+  text-decoration: underline;
+}
 /* NAVIGATION */
 
 nav {
@@ -112,8 +117,6 @@ nav a {
   font-size: 2em;
 }
 
-/* INDEX */
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -122,6 +125,8 @@ nav a {
     transform: rotate(360deg);
   }
 }
+/* INDEX */
+
 .latest-blogs-container {
   display: flex;
   justify-content: space-around;
@@ -207,6 +212,10 @@ nav a {
 .blog img {
   max-height: 10em;
 }
+a {
+  text-decoration: none;
+  color: #141414;
+}
 .load-more-btn {
   width: 10em;
   margin: 0 auto;
@@ -236,6 +245,10 @@ h2 {
 .blog-post {
   display: flex;
   flex-direction: column;
+  margin-bottom: 4em;
+}
+.blog-post p {
+  margin: 1.5em 0;
 }
 .social-buttons {
   font-size: 1.5em;

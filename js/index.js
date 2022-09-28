@@ -7,7 +7,7 @@ hamburger.addEventListener("click", () => {
 });
 
 /* API FETCH*/
-const url = "https://healthandfitness.flowerpower12394.one//wp-json/wp/v2/posts?per_page=16";
+const url = "https://healthandfitness.flowerpower12394.one//wp-json/wp/v2/posts?per_page=4";
 const blogContainer = document.querySelector(".latest-blogs-container");
 
 async function getBlogs() {
@@ -42,7 +42,7 @@ async function getBlogs() {
 }
 getBlogs();
 
-var slidePosition = 1;
+let slidePosition = 1;
 carousel(slidePosition);
 
 function changeSlides(n) {
@@ -50,19 +50,19 @@ function changeSlides(n) {
 }
 
 function currentSlide(n) {
-  carousel((slidePosition += n));
+  carousel((slidePosition = n));
 }
 
 function carousel(n) {
-  var i;
-  var blogPosts = document.getElementsByClassName("latest-blogs");
+  let i;
+  let blogPosts = document.getElementsByClassName("latest-blogs");
   console.log(blogPosts);
-  var dots = document.getElementsByClassName("dots");
+  let dots = document.getElementsByClassName("dots");
 
   if (n > blogPosts.length) {
     slidePosition = 1;
   }
-  if (n < 0) {
+  if (n < 1) {
     slidePosition = blogPosts.length;
   }
   for (i = 0; i < blogPosts.length; i++) {
@@ -71,7 +71,9 @@ function carousel(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
+
   console.log(blogPosts[slidePosition - 1]);
+
   blogPosts[slidePosition - 1].style.display = "block";
   dots[slidePosition - 1].className += " active";
 }

@@ -29,11 +29,11 @@ function createHtml(blogPost) {
   blogPostContainer.innerHTML = `<div class="blog-post">
                                 <img src="${blogPost[0].better_featured_image.source_url}">
                                 <div class="social-buttons">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-linkedin"></i>
+                                <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                                <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+                                <a href="#"> <i class="fa-brands fa-linkedin"></i> </a>
                                 </div>
-                                
+                                <hr>
                                 <h1 class="blog-title">${blogPost[0].title.rendered}</h1>
                                 <div class="blog-excerpt">${blogPost[0].excerpt.rendered}</div>
                                 <div class="blog-content">${blogPost[0].content.rendered}</div>
