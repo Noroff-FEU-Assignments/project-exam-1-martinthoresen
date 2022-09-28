@@ -1,6 +1,13 @@
-const blogContainer = document.querySelector(".blogs-container");
+/* HAMBURGER MENU */
 const hamburger = document.querySelector(".hamburger");
 const navbar = document.querySelector(".navbar");
+
+hamburger.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
+
+/* API FETCH*/
+const blogContainer = document.querySelector(".blogs-container");
 const loadMore = document.querySelector(".load-more-btn");
 const loader = document.querySelector(".loader");
 let currentPage = 0;
@@ -40,7 +47,3 @@ async function getBlogs() {
 getBlogs();
 
 loadMore.addEventListener("click", getBlogs);
-/* HAMBURGER MENU */
-hamburger.addEventListener("click", () => {
-  navbar.classList.toggle("active");
-});

@@ -1,10 +1,11 @@
+/* HAMBURGER MENU */
 const hamburger = document.querySelector(".hamburger");
 const navbar = document.querySelector(".navbar");
 
 hamburger.addEventListener("click", () => {
   navbar.classList.toggle("active");
 });
-
+/* API FETCH */
 const blogPostContainer = document.querySelector(".blog-post-container");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);

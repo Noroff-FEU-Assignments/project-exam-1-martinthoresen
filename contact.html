@@ -31,26 +31,36 @@
     </header>
     <main>
       <h1 id="contact-h1">Contact Us</h1>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name">
-        <label for="email">Your Email</label>
-        <input type="email" name="email" id="email">
+      <div class="message-container"></div>
+      <form id="contact-form">
+        <label for="fullname">Full name</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Minimum 5 characters..." />
+        <div class="form-error" id="fullname-error">Your name must be minimum 5 characters</div>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <div class="form-error" id="email-error">Please enter a valid email address</div>
+
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" id="subject" placeholder="Minimum 15 characters..." />
+        <div class="form-error" id="subject-error">Subject must be at least 15 characters long</div>
+
         <label for="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        <input id="submit" type="submit" value="Submit">
+        <textarea name="message" id="message" cols="20" rows="7" placeholder="Minimum 25 characters..."></textarea>
+        <div class="form-error" id="message-error">Message must be at least 25 characters long</div>
+
+        <input id="submit" type="submit" value="Submit" />
       </form>
     </main>
+    <footer>
+      <div class="footer-socials">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <p>&copy; 2022 health & fitness</p>
+    </footer>
+    <script src="js/contact.js"></script>
+    <script src="js/components/createMessage.js"></script>
   </body>
-  <footer>
-    <div class="footer-socials">
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"> <i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-    </div>
-    <p>&copy; 2022 health & fitness</p>
-  </footer>
-  <script src="js/contact.js"></script>
-  <script src="js/components/createMessage.js"></script>
-</body>
 </html>

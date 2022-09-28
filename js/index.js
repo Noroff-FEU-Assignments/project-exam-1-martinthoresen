@@ -1,7 +1,14 @@
-const url = "https://healthandfitness.flowerpower12394.one//wp-json/wp/v2/posts?per_page=16";
-const blogContainer = document.querySelector(".latest-blogs-container");
+/* HAMBURGER MENU */
 const hamburger = document.querySelector(".hamburger");
 const navbar = document.querySelector(".navbar");
+
+hamburger.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
+
+/* API FETCH*/
+const url = "https://healthandfitness.flowerpower12394.one//wp-json/wp/v2/posts?per_page=16";
+const blogContainer = document.querySelector(".latest-blogs-container");
 
 async function getBlogs() {
   try {
@@ -35,10 +42,6 @@ async function getBlogs() {
 }
 getBlogs();
 
-hamburger.addEventListener("click", () => {
-  navbar.classList.toggle("active");
-});
-
 var slidePosition = 1;
 carousel(slidePosition);
 
@@ -66,9 +69,9 @@ function carousel(n) {
     blogPosts[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" enable", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
   console.log(blogPosts[slidePosition - 1]);
   blogPosts[slidePosition - 1].style.display = "block";
-  dots[slidePosition - 1].className += " enable";
+  dots[slidePosition - 1].className += " active";
 }
