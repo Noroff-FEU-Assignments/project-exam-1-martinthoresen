@@ -8,7 +8,7 @@ hamburger.addEventListener("click", () => {
 
 /* API FETCH*/
 const blogContainer = document.querySelector(".blogs-container");
-const loadMore = document.querySelector(".load-more-btn");
+const loadMore = document.querySelector(".view-more-btn");
 const loader = document.querySelector(".loader");
 let currentPage = 0;
 

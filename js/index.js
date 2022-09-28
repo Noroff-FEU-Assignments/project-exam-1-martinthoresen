@@ -69,11 +69,11 @@ function carousel(n) {
     blogPosts[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" dot-active", "");
   }
 
   console.log(blogPosts[slidePosition - 1]);
 
   blogPosts[slidePosition - 1].style.display = "block";
-  dots[slidePosition - 1].className += " active";
+  dots[slidePosition - 1].className += " dot-active";
 }
