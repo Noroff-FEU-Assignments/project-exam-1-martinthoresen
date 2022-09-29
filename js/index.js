@@ -7,7 +7,7 @@ hamburger.addEventListener("click", () => {
 });
 
 /* API FETCH*/
-const url = "https://healthandfitness.flowerpower12394.one//wp-json/wp/v2/posts?per_page=4";
+const url = "https://healthandfitness.flowerpower12394.one//wp-json/wp/v2/posts?per_page=16";
 const blogContainer = document.querySelector(".latest-blogs-container");
 
 async function getBlogs() {

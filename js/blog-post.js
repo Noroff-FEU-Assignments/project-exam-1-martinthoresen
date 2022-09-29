@@ -33,7 +33,6 @@ function createHtml(blogPost) {
                                 <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
                                 <a href="#"> <i class="fa-brands fa-linkedin"></i> </a>
                                 </div>
-                                <hr>
                                 <h1 class="blog-title">${blogPost[0].title.rendered}</h1>
                                 <div class="blog-excerpt">${blogPost[0].excerpt.rendered}</div>
                                 <div class="blog-content">${blogPost[0].content.rendered}</div>
