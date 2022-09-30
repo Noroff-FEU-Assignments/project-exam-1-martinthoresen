@@ -57,7 +57,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Jost" sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -127,50 +127,59 @@ nav a {
 }
 /* INDEX */
 
+#index-h1 {
+  max-width: 80%;
+  margin: 3em auto;
+  margin-bottom: 1em;
+}
 .latest-blogs-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin: 5em;
+  max-width: 100%;
+  margin: 2em;
 }
-.latest-blogs-container div {
-  max-width: 25em;
+
+.latest-blogs img {
+  width: 100%;
+  max-height: 15em;
+  object-fit: cover;
 }
-.latest-blogs {
-  background-color: #ebebeb;
-  display: none;
+.latest-blogs p {
+  margin: 1em auto;
 }
-.dots-container {
-  display: flex;
-}
-.dots {
-  background-color: transparent;
-  margin: 1em;
-  width: 1em;
-  height: 1em;
-  border: 1px solid;
-  border-radius: 50%;
-}
-.dot-active,
-.dots:hover {
-  background-color: #36514b;
+.latest-blogs h2 {
+  text-align: center;
 }
 .blog-navigator {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2em;
+  margin: 1em 0;
 }
 .blog-navigator button {
   color: #141414;
   font-family: "Josefin Sans", sans-serif;
-  padding: 1em;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 0.5em;
   margin: 1em;
   background-color: transparent;
   cursor: pointer;
+  width: 15em;
 }
-
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* ABOUT */
 #about-h1 {
   margin: 3em auto;
@@ -229,11 +238,7 @@ a {
   color: #36514b;
   text-decoration: underline;
 }
-h2 {
-  font-family: "Jost" sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-}
+
 /* BLOG PAGE */
 
 .blog-post-flex {
@@ -337,6 +342,21 @@ form textarea {
   .hamburger {
     display: none;
   }
+  #index-h1 {
+    max-width: 12em;
+  }
+  .latest-blogs img {
+    width: 25em;
+  }
+  .blog-navigator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .latest-blogs p {
+    max-width: 25em;
+  }
   .about-container {
     margin: 4em;
     flex-direction: row;
@@ -355,7 +375,7 @@ form textarea {
   }
   .blog img {
     width: 30em;
-    max-height: 15em;
+    max-height: 18em;
     object-fit: cover;
   }
   .blog-post-container {
