@@ -59,7 +59,6 @@ function currentSlide(n) {
 function carousel(n) {
   let i;
   let blogPosts = document.querySelectorAll(".latest-blogs");
-  console.log(blogPosts);
 
   if (n > blogPosts.length) {
     slidePosition = 1;
