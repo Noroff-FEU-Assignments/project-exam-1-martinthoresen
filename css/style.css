@@ -167,6 +167,7 @@ nav a {
   background-color: transparent;
   cursor: pointer;
   width: 15em;
+  margin-bottom: 5em;
 }
 .fade {
   animation-name: fade;
@@ -184,7 +185,7 @@ nav a {
 
 #about-h1 {
   margin: 3em auto;
-  max-width: 50%;
+  max-width: 57%;
 }
 .about-container {
   display: flex;
@@ -305,7 +306,8 @@ form textarea {
 }
 #submit {
   background-color: #36514b;
-  font-family: "Josefin Sans" sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 0.3em;
   font-weight: 500;
   font-size: 1.5em;
   color: #ffff;

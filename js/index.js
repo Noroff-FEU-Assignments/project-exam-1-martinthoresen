@@ -52,10 +52,6 @@ function changeSlides(n) {
   carousel((slidePosition += n));
 }
 
-function currentSlide(n) {
-  carousel((slidePosition = n));
-}
-
 function carousel(n) {
   let i;
   let blogPosts = document.querySelectorAll(".latest-blogs");
