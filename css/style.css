@@ -181,6 +181,7 @@ nav a {
   }
 }
 /* ABOUT */
+
 #about-h1 {
   margin: 3em auto;
   max-width: 50%;
@@ -193,12 +194,10 @@ nav a {
   margin: 2em;
 }
 .about-container img {
-  width: 28em;
-  flex-wrap: wrap;
   max-width: 100%;
 }
 .about-container p {
-  max-width: 17em;
+  max-width: 100%;
   font-size: 1.2em;
 }
 
@@ -353,7 +352,6 @@ form textarea {
     align-items: center;
     justify-content: center;
   }
-
   .latest-blogs p {
     max-width: 25em;
   }
@@ -363,11 +361,12 @@ form textarea {
     flex-flow: wrap;
   }
   .about-container img {
-    margin: 2em 0;
+    max-width: 25em;
   }
   .about-container p {
     font-size: 1.5em;
-    margin: 0 2em;
+    margin: 1em 2em;
+    max-width: 25em;
   }
   .blog {
     margin: 2em 8em;
