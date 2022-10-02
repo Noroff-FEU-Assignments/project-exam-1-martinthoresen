@@ -186,7 +186,7 @@ nav a {
 
 #about-h1 {
   margin: 3em auto;
-  max-width: 57%;
+  max-width: 65%;
 }
 .about-container {
   display: flex;
@@ -367,7 +367,7 @@ form textarea {
     max-width: 25em;
   }
   .about-container {
-    margin: 4em;
+    margin-bottom: 6em;
     flex-direction: row;
     flex-flow: wrap;
   }
@@ -376,7 +376,7 @@ form textarea {
   }
   .about-container p {
     font-size: 1.5em;
-    margin: 1em 2em;
+    margin: 2em 3em;
     max-width: 25em;
   }
   .blog {
