@@ -28,8 +28,9 @@ async function getBlogs() {
                                         <h2 id="latest-blogs-h2">${blogs[i].title.rendered}</h2>
                                         <img src="${blogs[i].better_featured_image.source_url}">
                                         <p>${blogs[i].excerpt.rendered}</p>
-                                        <p>Read More...</p>
-                                        </div>`;
+                                        <p class="link-style">Read More...</p>
+                                        </div>
+                                        </a>`;
       }
 
       createHtml(blogs);

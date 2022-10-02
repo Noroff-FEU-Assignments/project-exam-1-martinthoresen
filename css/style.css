@@ -139,7 +139,9 @@ nav a {
   max-width: 100%;
   margin: 2em;
 }
-
+.latest-blogs {
+  max-height: 30em;
+}
 .latest-blogs img {
   width: 100%;
   max-height: 15em;
@@ -166,8 +168,7 @@ nav a {
   margin: 1em;
   background-color: transparent;
   cursor: pointer;
-  width: 15em;
-  margin-bottom: 5em;
+  width: 10em;
 }
 .fade {
   animation-name: fade;
@@ -353,6 +354,14 @@ form textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .blog-navigator button {
+    padding: 0.5em;
+    margin: 2em;
+    width: 15em;
+  }
+  .latest-blogs {
+    max-height: 27em;
   }
   .latest-blogs p {
     max-width: 25em;
