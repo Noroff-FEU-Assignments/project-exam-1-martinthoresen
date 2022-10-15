@@ -25,7 +25,7 @@ The website had to include:
 
 ### Installing
 
-You can install the project by clonng the github repo to your computer.
+You can install the project by cloning the github repo to your computer.
 
 ### Running
 
